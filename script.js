@@ -1,4 +1,3 @@
-
 const boton = document.getElementById("btn-saludo");
 const mensaje = document.getElementById("mensaje");
 
