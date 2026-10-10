@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnSaludo.addEventListener("click", function() {
         contador++;
 
-        mensaje.textContent = "¡Hola, Yonhson Luengo! Has presionado el botón " + contador + " veces.";
+        mensaje.textContent = `Gracias por saludar,llevas ${saludo} saludo (s).`
     });
 
 });
