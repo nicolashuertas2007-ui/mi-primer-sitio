@@ -1,13 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
 
-    let btnSaludo = document.getElementById("btn-saludo");
-    let mensaje = document.getElementById("mensaje");
-    let contador = 0;
+const boton = document.getElementById("btn-saludo");
+const mensaje = document.getElementById("mensaje");
 
-    btnSaludo.addEventListener("click", function() {
-        contador++;
+let saludo = 0;
 
-        mensaje.textContent = `Gracias por saludar,llevas ${saludo} saludo (s).`
-    });
+function saludar() {
+    saludo++;
 
-});
+    mensaje.textContent = `¡Gracias por saludar! Llevas ${saludo} saludo(s).`;
+}
+
+if (boton && mensaje) {
+    boton.addEventListener("click", saludar);
+} else {
+    console.error("No se encontró el botón o el elemento del mensaje.");
+}
